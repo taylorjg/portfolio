@@ -1,6 +1,6 @@
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { Global } from "@emotion/react";
-import { GlobalStyles } from "./App.styles";
+import { GlobalStyles } from "./app.styles";
 
 const darkTheme = createTheme({
   palette: {
