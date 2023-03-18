@@ -1,6 +1,7 @@
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { Global } from "@emotion/react";
 import { GlobalStyles } from "./app.styles";
+import projects from "./data";
 
 const darkTheme = createTheme({
   palette: {
@@ -13,7 +14,13 @@ export const App = () => {
     <ThemeProvider theme={darkTheme}>
       <Global styles={GlobalStyles} />
       <CssBaseline />
-      <div>TODO</div>
+      <div>
+        <ul>
+          {projects.map((project) => (
+            <li key={project.repo}>{project.title}</li>
+          ))}
+        </ul>
+      </div>
     </ThemeProvider>
   );
 };
