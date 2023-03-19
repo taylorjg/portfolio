@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { Global } from "@emotion/react";
 import { GlobalStyles } from "./app.styles";
-import { ProjectCard } from "./card";
+import { ProjectCard } from "./project-card";
+import { ProjectDetailsModal } from "./project-details-modal";
 import { StyledCardContainer } from "./app.styles";
+import { Project } from "./data";
 import projects from "./data";
 
 const darkTheme = createTheme({
@@ -12,15 +15,36 @@ const darkTheme = createTheme({
 });
 
 export const App = () => {
+  const [selectedProject, setSelectedProject] = useState<Project>();
+
+  const openModal = (project: Project) => {
+    setSelectedProject(project);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(undefined);
+  };
+
+  const onLearnMore = (project: Project) => {
+    openModal(project);
+  };
+
   return (
     <ThemeProvider theme={darkTheme}>
       <Global styles={GlobalStyles} />
       <CssBaseline />
       <StyledCardContainer>
         {projects.map((project) => (
-          <ProjectCard key={project.repo} project={project} />
+          <ProjectCard
+            key={project.repo}
+            project={project}
+            onLearnMore={onLearnMore}
+          />
         ))}
       </StyledCardContainer>
+      {selectedProject && (
+        <ProjectDetailsModal project={selectedProject} onClose={closeModal} />
+      )}
     </ThemeProvider>
   );
 };
