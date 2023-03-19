@@ -1,7 +1,8 @@
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { Global } from "@emotion/react";
 import { GlobalStyles } from "./app.styles";
-import { Card } from "./card";
+import { ProjectCard } from "./card";
+import { StyledCardContainer } from "./app.styles";
 import projects from "./data";
 
 const darkTheme = createTheme({
@@ -15,13 +16,11 @@ export const App = () => {
     <ThemeProvider theme={darkTheme}>
       <Global styles={GlobalStyles} />
       <CssBaseline />
-      <div>
-        <ul>
-          {projects.map((project) => (
-            <Card key={project.repo} project={project} />
-          ))}
-        </ul>
-      </div>
+      <StyledCardContainer>
+        {projects.map((project) => (
+          <ProjectCard key={project.repo} project={project} />
+        ))}
+      </StyledCardContainer>
     </ThemeProvider>
   );
 };
