@@ -38,6 +38,14 @@ export const ProjectDetailsModal: React.FunctionComponent<
             <li key={index}>{technology}</li>
           ))}
         </ul>
+        <Typography variant="h5">GitHub Repo</Typography>
+        <p>
+          <a href={project.repoLink}>{project.repoLink}</a>
+        </p>
+        <Typography variant="h5">Deployed Website</Typography>
+        <p>
+          <a href={project.website}>{project.website}</a>
+        </p>
       </StyledContent>
     </Dialog>
   );

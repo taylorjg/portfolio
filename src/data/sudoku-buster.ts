@@ -11,8 +11,7 @@ export default {
     "TensorFlow.js",
     "Scalable Vector Graphics (SVG)",
   ],
-  shortDescriptionMarkdown: `
-  `,
+  shortDescription: "Scan a Sudoku puzzle from a newspaper and solve it",
   longDescriptionMarkdown: `
 This little web app uses the camera to scan a Sudoku puzzle from a
 newspaper or magazine, solve it and display the solution.
@@ -32,6 +31,10 @@ To solve the scanned Sudoku puzzle, I use my implementation of
 Donald E. Knuth's Algorithm X.
 See [this separate project](https://github.com/taylorjg/dlxlibjs).
   `,
+  cardImage: {
+    path: "screenshots/sudoku-buster/sudoku-buster.png",
+    caption: "Shazizzle screenshot",
+  },
   videoClips: [
     {
       path: "sudoku-buster-react/video-clip.mov",

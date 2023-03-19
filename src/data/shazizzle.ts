@@ -9,8 +9,7 @@ export default {
     "PostgreSQL",
     "RxJS (when matching in streaming mode)",
   ],
-  shortDescriptionMarkdown: `
-  `,
+  shortDescription: "A very basic implementation of Shazam",
   longDescriptionMarkdown: `
 After experimenting a bit with the Web Audio API, I then created a very
 basic version of Shazam based on
@@ -18,4 +17,8 @@ basic version of Shazam based on
 and [this blog post](http://coding-geek.com/how-shazam-works).
 There are only 12 tracks in the database!
   `,
+  cardImage: {
+    path: "screenshots/shazizzle/shazizzle.png",
+    caption: "Shazizzle screenshot",
+  },
 };

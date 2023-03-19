@@ -4,8 +4,12 @@ export type Project = {
   repoLink: string;
   website: string;
   technologies: string[];
-  shortDescriptionMarkdown: string;
+  shortDescription: string;
   longDescriptionMarkdown: string;
+  cardImage: {
+    path: string;
+    caption: string;
+  };
   screenshots?: [
     {
       path: string;

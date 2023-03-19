@@ -1,5 +1,11 @@
 import { Project } from "./data";
-import { Button, Card, CardActions, CardContent } from "@mui/material";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 
 type CardProps = {
   project: Project;
@@ -12,14 +18,22 @@ export const ProjectCard: React.FunctionComponent<CardProps> = ({
 }: CardProps) => {
   return (
     <Card variant="outlined">
-      <CardContent>
-        <div>{project.title}</div>
-      </CardContent>
-      <CardActions>
-        <Button size="small" onClick={() => onLearnMore(project)}>
-          Learn More
-        </Button>
-      </CardActions>
+      <CardActionArea onClick={() => onLearnMore(project)}>
+        <CardContent>
+          <CardMedia
+            component="img"
+            sx={{ height: "12rem", mb: 1, objectFit: "scale-down" }}
+            image={project.cardImage.path}
+            title={project.cardImage.caption}
+          />
+          <Typography gutterBottom variant="h6">
+            {project.title}
+          </Typography>
+          <Typography gutterBottom variant="body2">
+            {project.shortDescription}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
     </Card>
   );
 };

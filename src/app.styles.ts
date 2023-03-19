@@ -15,7 +15,7 @@ export const StyledCardContainer = styled.div`
   width: 100%;
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, min(20rem, calc(90vw)));
+  grid-template-columns: repeat(auto-fill, min(25rem, calc(90vw)));
   gap: 1rem;
   @supports not (gap: 1rem) {
     > *:not(:last-child) {
