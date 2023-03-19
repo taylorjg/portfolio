@@ -37,4 +37,7 @@ export const StyledContent = styled.div`
     background-color: transparent;
     border: 0;
   }
+  a {
+    color: inherit;
+  }
 `;

@@ -12,10 +12,10 @@ export default {
   shortDescriptionMarkdown: `
   `,
   longDescriptionMarkdown: `
-    After experimenting a bit with the Web Audio API, I then created a very
-    basic version of Shazam based on
-    [this paper](https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf)
-    and [this blog post](http://coding-geek.com/how-shazam-works).
-    There are only 12 tracks in the database!
+After experimenting a bit with the Web Audio API, I then created a very
+basic version of Shazam based on
+[this paper](https://www.ee.columbia.edu/~dpwe/papers/Wang03-shazam.pdf)
+and [this blog post](http://coding-geek.com/how-shazam-works).
+There are only 12 tracks in the database!
   `,
 };

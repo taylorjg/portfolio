@@ -1,5 +1,6 @@
 import { AppBar, Dialog, IconButton, Toolbar, Typography } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import ReactMarkdown from "react-markdown";
 import { Project } from "./data";
 import { StyledContent } from "./project-details-modal.styles";
 
@@ -23,12 +24,21 @@ export const ProjectDetailsModal: React.FunctionComponent<
           >
             <CloseIcon />
           </IconButton>
-          <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+          <Typography sx={{ ml: 2 }} variant="h4">
             {project.title}
           </Typography>
         </Toolbar>
       </AppBar>
-      <StyledContent>{project.longDescriptionMarkdown}</StyledContent>
+      <StyledContent>
+        <Typography variant="h5">Description</Typography>
+        <ReactMarkdown>{project.longDescriptionMarkdown}</ReactMarkdown>
+        <Typography variant="h5">Technologies</Typography>
+        <ul>
+          {project.technologies.map((technology, index) => (
+            <li key={index}>{technology}</li>
+          ))}
+        </ul>
+      </StyledContent>
     </Dialog>
   );
 };
