@@ -1,4 +1,12 @@
-import { AppBar, Dialog, IconButton, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Dialog,
+  IconButton,
+  Toolbar,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import ReactMarkdown from "react-markdown";
 import { Project } from "./data";
@@ -12,8 +20,20 @@ export type ProjectDetailsModalProps = {
 export const ProjectDetailsModal: React.FunctionComponent<
   ProjectDetailsModalProps
 > = ({ project, onClose }: ProjectDetailsModalProps) => {
+  const theme = useTheme();
+  const mediaQuery = theme.breakpoints.down("md");
+  const isSmallScreen = useMediaQuery(mediaQuery);
+
+  console.log({ mediaQuery, isSmallScreen });
+
   return (
-    <Dialog fullScreen open={true} onClose={onClose}>
+    <Dialog
+      fullScreen={isSmallScreen}
+      maxWidth="md"
+      fullWidth={true}
+      open={true}
+      onClose={onClose}
+    >
       <AppBar sx={{ position: "relative" }}>
         <Toolbar>
           <IconButton
