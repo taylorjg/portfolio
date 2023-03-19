@@ -1,6 +1,7 @@
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { Global } from "@emotion/react";
 import { GlobalStyles } from "./app.styles";
+import { Card } from "./card";
 import projects from "./data";
 
 const darkTheme = createTheme({
@@ -17,7 +18,7 @@ export const App = () => {
       <div>
         <ul>
           {projects.map((project) => (
-            <li key={project.repo}>{project.title}</li>
+            <Card key={project.repo} project={project} />
           ))}
         </ul>
       </div>
