@@ -22,7 +22,7 @@ export const ProjectCard: React.FunctionComponent<CardProps> = ({
         <CardContent>
           <CardMedia
             component="img"
-            sx={{ height: "12rem", mb: 1, objectFit: "fill" }}
+            sx={{ height: "12rem", mb: 1, objectFit: "scale-down" }}
             image={project.cardImage.path}
             title={project.cardImage.caption}
           />
