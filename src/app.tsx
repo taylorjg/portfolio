@@ -6,6 +6,7 @@ import { ProjectCard } from "./project-card";
 import { ProjectDetailsModal } from "./project-details-modal";
 import { StyledCardContainer } from "./app.styles";
 import { Project } from "./data";
+import { Version } from "./version";
 import projects from "./data";
 
 const darkTheme = createTheme({
@@ -33,6 +34,7 @@ export const App = () => {
     <ThemeProvider theme={darkTheme}>
       <Global styles={GlobalStyles} />
       <CssBaseline />
+      <Version />
       <StyledCardContainer>
         {projects.map((project) => (
           <ProjectCard
