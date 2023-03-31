@@ -33,7 +33,7 @@ See [this separate project](https://github.com/taylorjg/dlxlibjs).
   `,
   cardImage: {
     path: "screenshots/sudoku-buster/card-image.png",
-    caption: "Shazizzle screenshot",
+    caption: "Sudoku Buster screenshot",
   },
   videoClips: [
     {

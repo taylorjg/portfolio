@@ -6,6 +6,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import { AspectRatio } from "react-aspect-ratio";
 
 type CardProps = {
   project: Project;
@@ -20,12 +21,12 @@ export const ProjectCard: React.FunctionComponent<CardProps> = ({
     <Card variant="outlined">
       <CardActionArea onClick={() => onLearnMore(project)}>
         <CardContent>
-          <CardMedia
-            component="img"
-            sx={{ height: "12rem", mb: 1, objectFit: "scale-down" }}
-            image={project.cardImage.path}
-            title={project.cardImage.caption}
-          />
+          <AspectRatio ratio="16/9">
+            <CardMedia
+              image={project.cardImage.path}
+              title={project.cardImage.caption}
+            />
+          </AspectRatio>
           <Typography gutterBottom variant="h6">
             {project.title}
           </Typography>
