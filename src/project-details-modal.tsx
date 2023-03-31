@@ -24,8 +24,6 @@ export const ProjectDetailsModal: React.FunctionComponent<
   const mediaQuery = theme.breakpoints.down("md");
   const isSmallScreen = useMediaQuery(mediaQuery);
 
-  console.log({ mediaQuery, isSmallScreen });
-
   return (
     <Dialog
       fullScreen={isSmallScreen}
