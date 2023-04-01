@@ -17,7 +17,7 @@ export default {
   shortDescription: "GitHub OAuth App to display repo traffic data",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "screenshots/repo-traffic/card-image.png",
+    path: "screenshots/repo-traffic-react/card-image.png",
     caption: "Repo Traffic screenshot",
   },
 };
