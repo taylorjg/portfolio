@@ -3,7 +3,7 @@ export default {
   repo: "basketcase",
   repoLink: "https://github.com/taylorjg/basketcase",
   website: "https://basketcase.onrender.com",
-  technologies: ["AngularJS 1.x", "JavaScript", "Elasticsearch"],
+  technologies: ["JavaScript", "AngularJS 1.x", "Elasticsearch"],
   shortDescription:
     "Simple online store selling washing machines with faceted navigation",
   longDescriptionMarkdown: ``,

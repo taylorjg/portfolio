@@ -4,8 +4,8 @@ export default {
   repoLink: "https://github.com/taylorjg/dlxlib-demos",
   website: "https://taylorjg.github.io/dlxlib-demos",
   technologies: [
-    "React",
     "TypeScript",
+    "React",
     "Scalable Vector Graphics (SVG)",
     "Web Workers API",
   ],

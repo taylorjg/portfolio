@@ -4,8 +4,8 @@ export default {
   repoLink: "https://github.com/taylorjg/mastermind-svg-vue",
   website: "https://taylorjg.github.io/mastermind-svg-vue",
   technologies: [
-    "Vue.js",
     "JavaScript",
+    "Vue.js",
     "Scalable Vector Graphics (SVG)",
     "Web Workers API",
   ],

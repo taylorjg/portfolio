@@ -4,8 +4,8 @@ export default {
   repoLink: "https://github.com/taylorjg/solitaire-rl-web",
   website: "https://taylorjg.github.io/solitaire-rl-web",
   technologies: [
-    "React",
     "JavaScript",
+    "React",
     "TensorFlow.js",
     "Scalable Vector Graphics (SVG)",
   ],

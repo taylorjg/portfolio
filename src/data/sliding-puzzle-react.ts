@@ -3,7 +3,7 @@ export default {
   repo: "sliding-puzzle-react",
   repoLink: "https://github.com/taylorjg/sliding-puzzle-react",
   website: "https://taylorjg.github.io/sliding-puzzle-react",
-  technologies: ["React", "TypeScript", "Phaser"],
+  technologies: ["TypeScript", "React", "Phaser", "Web Workers API"],
   shortDescription: "Play (or auto-solve) the classic sliding puzzle",
   longDescriptionMarkdown: ``,
   cardImage: {

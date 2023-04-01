@@ -4,8 +4,8 @@ export default {
   repoLink: "https://github.com/taylorjg/sudoku-buster-react",
   website: "https://taylorjg.github.io/sudoku-buster-react",
   technologies: [
-    "React",
     "TypeScript",
+    "React",
     "OpenCV",
     "C++ Web Assembly",
     "TensorFlow.js",

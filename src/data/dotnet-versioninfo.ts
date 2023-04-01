@@ -3,7 +3,7 @@ export default {
   repo: "dotnet-versioninfo",
   repoLink: "https://github.com/taylorjg/dotnet-versioninfo",
   website: "https://www.nuget.org/packages/dotnet-versioninfo",
-  technologies: [".NET", "C#"],
+  technologies: ["C#", ".NET"],
   shortDescription:
     ".NET global tool to display the version info of .NET assemblies",
   longDescriptionMarkdown: ``,
