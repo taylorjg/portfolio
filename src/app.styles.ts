@@ -10,9 +10,9 @@ export const GlobalStyles = css`
   }
 `;
 
-export const StyledPageHeader = styled.div`
+export const StyledPageHeader = styled.div<{ bgcolor: string }>`
   height: 2rem;
-  background-color: #121212;
+  background-color: ${({ bgcolor }) => bgcolor};
   position: sticky;
   top: 0;
   z-index: 1;

@@ -34,7 +34,7 @@ export const App = () => {
     <ThemeProvider theme={darkTheme}>
       <Global styles={GlobalStyles} />
       <CssBaseline />
-      <StyledPageHeader>
+      <StyledPageHeader bgcolor={darkTheme.palette.background.default}>
         <Version />
       </StyledPageHeader>
       <StyledCardContainer>
