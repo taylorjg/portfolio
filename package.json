@@ -1,6 +1,8 @@
 {
   "name": "portfolio",
   "version": "0.0.3",
+  "description": "",
+  "homepage": "https://taylorjg.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -30,7 +32,10 @@
     "test:once": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "open": "open https://taylorjg.github.io/portfolio"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +63,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.4"
   }
 }

@@ -1,5 +1,5 @@
 export default {
-  title: "DlxLib Demos (React)",
+  title: "DlxLib Demos",
   repo: "dlxlib-demos",
   repoLink: "https://github.com/taylorjg/dlxlib-demos",
   website: "https://taylorjg.github.io/dlxlib-demos",
