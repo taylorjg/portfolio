@@ -4,7 +4,7 @@ import { Global } from "@emotion/react";
 import { GlobalStyles } from "./app.styles";
 import { ProjectCard } from "./project-card";
 import { ProjectDetailsModal } from "./project-details-modal";
-import { StyledCardContainer } from "./app.styles";
+import { StyledCardContainer, StyledPageHeader } from "./app.styles";
 import { Project } from "./data";
 import { Version } from "./version";
 import projects from "./data";
@@ -34,7 +34,9 @@ export const App = () => {
     <ThemeProvider theme={darkTheme}>
       <Global styles={GlobalStyles} />
       <CssBaseline />
-      <Version />
+      <StyledPageHeader>
+        <Version />
+      </StyledPageHeader>
       <StyledCardContainer>
         {projects.map((project) => (
           <ProjectCard

@@ -10,16 +10,22 @@ export const GlobalStyles = css`
   }
 `;
 
+export const StyledPageHeader = styled.div`
+  height: 2rem;
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+`;
+
 export const StyledCardContainer = styled.div`
-  margin: 1rem 0;
+  margin-bottom: 2rem;
   width: 100%;
-  justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, min(25rem, calc(90vw)));
   gap: 1rem;
-  @supports not (gap: 1rem) {
-    > *:not(:last-child) {
-      margin-right: 1rem;
-    }
-  }
+  justify-content: center;
 `;
