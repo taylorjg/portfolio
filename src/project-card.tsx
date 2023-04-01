@@ -18,9 +18,12 @@ export const ProjectCard: React.FunctionComponent<CardProps> = ({
   onLearnMore,
 }: CardProps) => {
   return (
-    <Card variant="outlined">
-      <CardActionArea onClick={() => onLearnMore(project)}>
-        <CardContent>
+    <Card variant="outlined" sx={{ backgroundColor: "#444" }}>
+      <CardActionArea
+        onClick={() => onLearnMore(project)}
+        sx={{ height: "100%" }}
+      >
+        <CardContent sx={{ height: "100%" }}>
           <AspectRatio ratio="16/9">
             <CardMedia
               image={project.cardImage.path}
