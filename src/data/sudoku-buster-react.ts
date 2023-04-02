@@ -32,7 +32,7 @@ Donald E. Knuth's Algorithm X.
 See [this separate project](https://github.com/taylorjg/dlxlibjs).
   `,
   cardImage: {
-    path: "/portfolio/screenshots/sudoku-buster-react/card-image.png",
+    path: "/portfolio/screenshots/sudoku-buster-react/card-image.webp",
     caption: "Sudoku Buster screenshot",
   },
   videoClips: [

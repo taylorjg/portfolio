@@ -7,7 +7,7 @@ export default {
   shortDescription: "Play (or auto-solve) the classic sliding puzzle",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "/portfolio/screenshots/sliding-puzzle-react/card-image.png",
+    path: "/portfolio/screenshots/sliding-puzzle-react/card-image.webp",
     caption: "Sliding Puzzle screenshot",
   },
 };

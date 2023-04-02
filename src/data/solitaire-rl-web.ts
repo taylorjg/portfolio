@@ -13,7 +13,7 @@ export default {
     "Use reinforcement learning to find a solution to peg solitaire",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "/portfolio/screenshots/solitaire-rl-web/card-image.png",
+    path: "/portfolio/screenshots/solitaire-rl-web/card-image.webp",
     caption: "Peg Solitaire screenshot",
   },
 };
