@@ -13,7 +13,7 @@ export default {
     "Solve various puzzles using Algorithm X (Dancing Links/DLX)",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "screenshots/dlxlib-demos/card-image.png",
+    path: "/portfolio/screenshots/dlxlib-demos/card-image.png",
     caption: "DlxLib Demos screenshot",
   },
 };

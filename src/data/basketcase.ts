@@ -8,7 +8,7 @@ export default {
     "Simple online store selling washing machines with faceted navigation",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "screenshots/basketcase/card-image.png",
+    path: "/portfolio/screenshots/basketcase/card-image.png",
     caption: "Basket Case screenshot",
   },
 };

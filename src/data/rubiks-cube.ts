@@ -8,7 +8,7 @@ export default {
     "Visualise the solving of a Rubik's cube (currently, only faux solving)",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "screenshots/rubiks-cube/card-image.png",
+    path: "/portfolio/screenshots/rubiks-cube/card-image.png",
     caption: "Rubik's Cube screenshot",
   },
 };
