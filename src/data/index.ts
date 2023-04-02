@@ -9,7 +9,8 @@ import repoTraffic from "./repo-traffic-react";
 import pegSolitaire from "./solitaire-rl-web";
 import mastermind from "./mastermind-svg-vue";
 import basketcase from "./basketcase";
-import versionindfo from "./dotnet-versioninfo";
+import versionInfo from "./dotnet-versioninfo";
+import sparklerGame from "./sparkler-game-phaser";
 
 const projects: Project[] = [
   sudokuBuster,
@@ -22,7 +23,8 @@ const projects: Project[] = [
   pegSolitaire,
   mastermind,
   basketcase,
-  versionindfo,
+  versionInfo,
+  sparklerGame,
 ];
 
 export default projects;
