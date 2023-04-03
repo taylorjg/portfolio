@@ -13,7 +13,7 @@ export default {
     "Play the game of Mastermind - or solve it automatically using Donald E. Knuth's algorithm",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "/portfolio/screenshots/mastermind-svg-vue/card-image.webp",
+    path: "screenshots/mastermind-svg-vue/card-image.webp",
     caption: "Mastermind screenshot",
   },
 };

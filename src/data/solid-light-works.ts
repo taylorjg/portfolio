@@ -8,7 +8,7 @@ export default {
     "Attempt to render some of Anthony McCall's solid light works using Three.js and WebGL",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "/portfolio/screenshots/solid-light-works/card-image.webp",
+    path: "screenshots/solid-light-works/card-image.webp",
     caption: "Solid Light Works screenshot",
   },
 };

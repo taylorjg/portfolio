@@ -8,7 +8,7 @@ export default {
     ".NET global tool to display the version info of .NET assemblies",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "/portfolio/screenshots/dotnet-versioninfo/card-image.webp",
+    path: "screenshots/dotnet-versioninfo/card-image.webp",
     caption: "XXX screenshot",
   },
 };

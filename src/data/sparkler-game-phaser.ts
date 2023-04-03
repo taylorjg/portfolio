@@ -8,7 +8,7 @@ export default {
     "Recreate Seb Lee-Delisle's sparkler game from the Royal Institution Christmas Lectures 2019 part 2 ",
   longDescriptionMarkdown: ``,
   cardImage: {
-    path: "/portfolio/screenshots/sparkler-game-phaser/card-image.webp",
+    path: "screenshots/sparkler-game-phaser/card-image.webp",
     caption: "Sparkler Game screenshot",
   },
 };
