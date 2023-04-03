@@ -18,7 +18,7 @@ and [this blog post](http://coding-geek.com/how-shazam-works).
 There are only 12 tracks in the database!
   `,
   cardImage: {
-    path: "/portfolio/screenshots/shazizzle/card-image.webp",
+    path: "screenshots/shazizzle/card-image.webp",
     caption: "Shazizzle screenshot",
   },
 };

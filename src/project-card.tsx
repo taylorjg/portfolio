@@ -26,7 +26,7 @@ export const ProjectCard: React.FunctionComponent<CardProps> = ({
         <CardContent sx={{ height: "100%" }}>
           <AspectRatio ratio="16/9">
             <CardMedia
-              image={project.cardImage.path}
+              image={`${process.env.PUBLIC_URL}/${project.cardImage.path}`}
               title={project.cardImage.caption}
             />
           </AspectRatio>
