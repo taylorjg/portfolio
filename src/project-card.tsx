@@ -48,6 +48,7 @@ export const ProjectCard: React.FunctionComponent<CardProps> = ({
                 component="img"
                 image={pngCardImagePath}
                 title={project.cardImage.caption}
+                sx={{ maxHeight: "100%", width: "auto" }}
               />
             </picture>
           </AspectRatio>
