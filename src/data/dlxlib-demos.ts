@@ -10,7 +10,7 @@ export default {
     "Web Workers API",
   ],
   shortDescription:
-    "Solve various puzzles using Algorithm X (Dancing Links/DLX)",
+    "Use Donald E. Knuth's Algorithm X (Dancing Links/DLX) to solve various puzzles",
   longDescriptionMarkdown: ``,
   cardImage: {
     path: "screenshots/dlxlib-demos/card-image.webp",

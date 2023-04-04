@@ -17,7 +17,7 @@ export const StyledPageHeader = styled.div<{ bgcolor: string }>`
   top: 0;
   z-index: 1;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 `;
 
