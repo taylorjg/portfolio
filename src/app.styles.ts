@@ -26,6 +26,6 @@ export const StyledCardContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, min(25rem, calc(90vw)));
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
 `;

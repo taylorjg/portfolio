@@ -1,7 +1,8 @@
 import { Project } from "./data";
 import {
+  Button,
   Card,
-  CardActionArea,
+  CardActions,
   CardContent,
   CardMedia,
   Typography,
@@ -34,31 +35,31 @@ export const ProjectCard: React.FunctionComponent<CardProps> = ({
   const pngCardImagePath = makeImagePath(project.cardImage.path, "png");
 
   return (
-    <Card variant="outlined" sx={{ backgroundColor: "#444" }}>
-      <CardActionArea
-        onClick={() => onLearnMore(project)}
-        sx={{ height: "100%" }}
-      >
-        <CardContent sx={{ height: "100%" }}>
-          <AspectRatio ratio="16/9">
-            <picture>
-              {makePictureSource(webpCardImagePath)}
-              {makePictureSource(pngCardImagePath)}
-              <CardMedia
-                component="img"
-                image={pngCardImagePath}
-                title={project.cardImage.caption}
-              />
-            </picture>
-          </AspectRatio>
-          <Typography gutterBottom variant="h6">
-            {project.title}
-          </Typography>
-          <Typography gutterBottom variant="body2">
-            {project.shortDescription}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+    <Card square variant="outlined" sx={{ backgroundColor: "#444" }}>
+      <AspectRatio ratio="16/9">
+        <picture>
+          {makePictureSource(webpCardImagePath)}
+          {makePictureSource(pngCardImagePath)}
+          <CardMedia
+            component="img"
+            image={pngCardImagePath}
+            title={project.cardImage.caption}
+          />
+        </picture>
+      </AspectRatio>
+      <CardContent>
+        <Typography gutterBottom variant="h6">
+          {project.title}
+        </Typography>
+        <Typography gutterBottom variant="body2">
+          {project.shortDescription}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" onClick={() => onLearnMore(project)}>
+          Learn More
+        </Button>
+      </CardActions>
     </Card>
   );
 };
