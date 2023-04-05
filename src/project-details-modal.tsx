@@ -34,9 +34,7 @@ export const ProjectDetailsModal: React.FunctionComponent<
     >
       <DialogTitle>
         <StyledTitle>
-          <Typography variant="h5" component="div">
-            {project.title}
-          </Typography>
+          <Typography variant="h5">{project.title}</Typography>
           <IconButton onClick={onClose} aria-label="close">
             <CloseIcon />
           </IconButton>
@@ -44,19 +42,19 @@ export const ProjectDetailsModal: React.FunctionComponent<
       </DialogTitle>
       <DialogContent dividers>
         <StyledContent>
-          <Typography variant="h5">Description</Typography>
+          <Typography variant="h6">Description</Typography>
           <ReactMarkdown>{project.longDescriptionMarkdown}</ReactMarkdown>
-          <Typography variant="h5">Technologies</Typography>
+          <Typography variant="h6">Technologies</Typography>
           <ul>
             {project.technologies.map((technology, index) => (
               <li key={index}>{technology}</li>
             ))}
           </ul>
-          <Typography variant="h5">GitHub Repo</Typography>
+          <Typography variant="h6">GitHub Repo</Typography>
           <p>
             <a href={project.repoLink}>{project.repoLink}</a>
           </p>
-          <Typography variant="h5">Deployed Website</Typography>
+          <Typography variant="h6">Deployed Website</Typography>
           <p>
             <a href={project.website}>{project.website}</a>
           </p>
