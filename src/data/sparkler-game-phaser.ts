@@ -6,7 +6,18 @@ export default {
   technologies: ["TypeScript", "Phaser", "Web Audio API"],
   shortDescription:
     "Recreate Seb Lee-Delisle's sparkler game from the Royal Institution Christmas Lectures 2019 part 2 ",
-  longDescriptionMarkdown: ``,
+  longDescriptionMarkdown: `
+This is my attempt to recreate Seb Lee-Delisle's interactive sparkler game as
+seen in the second of the Royal Institution Christmas lectures with Dr Hannah
+Fry on 27 December 2019. The game used the audience noise level to guide a
+sparkler between a scrolling sequence of obstacles.
+
+You can control the game in one of the following ways:
+
+* Using the UP ARROW key
+* By clicking/tapping the window
+* By making some noise (after turning on the microphone by clicking the icon in the bottom right corner of the window)
+  `,
   cardImage: {
     path: "screenshots/sparkler-game-phaser/card-image.webp",
     caption: "Sparkler Game screenshot",

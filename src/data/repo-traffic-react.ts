@@ -15,7 +15,14 @@ export default {
     "GitHub GraphQL API",
   ],
   shortDescription: "GitHub OAuth App to display repo traffic data",
-  longDescriptionMarkdown: ``,
+  longDescriptionMarkdown: `
+This little app lists your GitHub repos along with traffic details
+(views and clones). It is a
+[GitHub OAuth App](https://docs.github.com/en/apps/oauth-apps) - you need to
+authorize it to allow access to
+your GitHub repos. Once authorized, it maintains the GitHub access token
+in an encrypted cookie.
+  `,
   cardImage: {
     path: "screenshots/repo-traffic-react/card-image.webp",
     caption: "Repo Traffic screenshot",
